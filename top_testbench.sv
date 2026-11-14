@@ -16,6 +16,27 @@ import uvm_pkg::*;
 `include "tb/ALU_base_test.sv"
 `include "tb/ALU_operation_test.sv"
 
+`include "tb/Sequences/ALU_base_sequence.sv"
+
+`include "tb/Sequences/Arithmetic/Arithmetic_Base_Sequence.sv"
+`include "tb/Sequences/Arithmetic/Add_Sequences.sv"
+`include "tb/Sequences/Arithmetic/Sub_Sequences.sv"
+`include "tb/Sequences/Arithmetic/Div_Sequences.sv"
+
+`include "tb/Sequences/Logic/Logic_Base_Sequence.sv"
+`include "tb/Sequences/Logic/And_Sequences.sv"
+`include "tb/Sequences/Logic/Or_Sequences.sv"
+`include "tb/Sequences/Logic/Xor_Sequences.sv"
+
+`include "tb/Sequences/Shift/Shift_Base_Sequence.sv"
+`include "tb/Sequences/Shift/Shl_Sequences.sv"
+`include "tb/Sequences/Shift/Shr_Sequences.sv"
+
+`include "tb/Sequences/Flow/Flow_Sequences.sv"
+`include "tb/Sequences/Reset/Reset_Sequences.sv"
+`include "tb/Sequences/Undefined/Undefined_Sequences.sv"
+`include "tb/Sequences/Random/Random_Sequences.sv"
+
 module top;
 
   //Instantiation

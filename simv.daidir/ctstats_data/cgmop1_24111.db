@@ -1,0 +1,7 @@
+Host name: synopsys.stbzu.edu
+Command line:
+/usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/cgmop1 -reportstats -tls_initexe -pic -gen_obj rmapats.m rmapats_mop.o 
+PSR=33
+========== Data begin ==========
+1794666819.99 16008 1392 812 580
+1794666820.00 19324 5172 888 4284 0 0.0
