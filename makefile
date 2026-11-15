@@ -22,11 +22,11 @@ compile:
 # make run TEST=Directed_Test            (log: Directed_Test.log)
 # make run TEST=Directed_Test DUT=fixed  (log: Directed_Test_fixed.log)
 run:
-	./$(SIMV) +UVM_TESTNAME=$(TEST) | tee $(TEST)$(SUFFIX).log
+	./$(SIMV) +UVM_TESTNAME=$(TEST) +WAVE=$(TEST)$(SUFFIX).vcd | tee $(TEST)$(SUFFIX).log
 
 # run every test one after the other (add DUT=fixed for the corrected DUT)
 regress:
-	for t in Directed_Test Corner_Test Flow_Test Random_Test Pseudo_Random_Test; do ./$(SIMV) +UVM_TESTNAME=$$t > $${t}$(SUFFIX).log; echo $$t; grep "Checked" $${t}$(SUFFIX).log; done
+	for t in Directed_Test Corner_Test Flow_Test Random_Test Pseudo_Random_Test; do ./$(SIMV) +UVM_TESTNAME=$$t +WAVE=$${t}$(SUFFIX).vcd > $${t}$(SUFFIX).log; echo $$t; grep "Checked" $${t}$(SUFFIX).log; done
 
 clean:
 	rm -rf simv* csrc ucli.key *.log *.vcd *.fsdb *.vpd *.vdb vc_hdrs.h DVEfiles verdiLog novas* AN.DB simprofile_dir .inter.vpd.uvm .vlogansetup* .fsm.sch.verilog.xml .restartSimSession.tcl.old

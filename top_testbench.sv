@@ -89,9 +89,10 @@ module top;
     $finish();
   end
 
-  //Generate Waveforms (VCD; use $fsdbDumpfile/$fsdbDumpvars instead if you view in Verdi)
+  string wave_name;
   initial begin
-    $dumpfile("waves.vcd");
+    if (!$value$plusargs("WAVE=%s", wave_name)) wave_name = "waves.vcd";
+    $dumpfile(wave_name);
     $dumpvars(0, top);
   end
 
