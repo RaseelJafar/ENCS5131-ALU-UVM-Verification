@@ -1,7 +1,0 @@
-Host name: synopsys.stbzu.edu
-Command line:
-/usr/synopsys/vcs/T-2022.06-SP2/linux64/bin/vcselab -o simv -nobanner -reportstats 
-PSR=35
-========== Data begin ==========
-1794666819.79 149788 20820 2124 18696
-1794666820.16 226004 62152 2188 59964 0 0.3
