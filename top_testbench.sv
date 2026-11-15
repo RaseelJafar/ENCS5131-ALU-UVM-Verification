@@ -1,7 +1,12 @@
 `include "uvm_macros.svh"
 import uvm_pkg::*;
 
-`include "rtl/ALU.sv"
+`ifdef FIXED_DUT
+  `include "rtl/ALU_fixed.sv"
+`else
+  `include "rtl/ALU.sv"
+`endif
+
 `include "tb/ALU_interface.sv"
 `include "tb/ALU_sequence_item.sv"
 `include "tb/Sequences/RESET_Sequence.sv"
@@ -36,6 +41,13 @@ import uvm_pkg::*;
 `include "tb/Sequences/Reset/Reset_Sequences.sv"
 `include "tb/Sequences/Undefined/Undefined_Sequences.sv"
 `include "tb/Sequences/Random/Random_Sequences.sv"
+
+`include "tb/ALU_directed_test.sv"
+`include "tb/ALU_corner_test.sv"
+`include "tb/ALU_flow_test.sv"
+`include "tb/ALU_random_test.sv"
+`include "tb/ALU_pseudo_random_test.sv"
+
 
 module top;
 

@@ -51,4 +51,8 @@ class ALU_base_sequence extends uvm_sequence #(ALU_sequence_item);
     endcase
   endtask : make_carry
 
+  virtual task pre_body();
+    `uvm_info(get_type_name(), "===== sequence started =====", UVM_LOW)
+  endtask
+
 endclass : ALU_base_sequence
