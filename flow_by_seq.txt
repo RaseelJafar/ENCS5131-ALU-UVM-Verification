@@ -1,0 +1,23 @@
+      1 SEQ Carry_Then_Valid_Seq
+      8 MISMATCH
+      1 SEQ Op_Pair_Seq
+     48 MISMATCH
+      1 SEQ Same_Op_Repeat_Seq
+      4 MISMATCH
+      1 SEQ DivZero_Then_Div_Seq
+      1 SEQ Shift_Chain_Seq
+      6 MISMATCH
+      1 SEQ Reset_Mid_Op_Seq
+      1 SEQ Reset_After_Carry_Seq
+      1 MISMATCH
+      1 SEQ Back_To_Back_Reset_Seq
+      1 SEQ Reset_Each_Op_Seq
+      1 SEQ Op_After_Reset_Seq
+      1 SEQ Undefined_Opcode_Seq
+      2 MISMATCH
+      1 SEQ Nand_Opcode_Seq
+      4 MISMATCH
+      1 SEQ Carry_Then_Undefined_Seq
+     41 MISMATCH
+      1 SEQ Valid_After_Undefined_Seq
+      1 MISMATCH

@@ -1,0 +1,17 @@
+# VCS generated files
+csrc/
+simv
+simv.*
+simv_*
+*.daidir/
+
+# Simulation logs
+*.log
+
+# Waveforms
+*.vcd
+*.vpd
+*.fsdb
+
+# Coverage
+simv.vdb/

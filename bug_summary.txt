@@ -1,0 +1,96 @@
+===== Directed_Test
+Checked 43 transactions: 37 matches, 6 mismatches
+rst=0 sel=0110 A=a5 B=01 | DUT: result=4a carry=0 | EXPECTED: result=4a carry=1
+rst=0 sel=0110 A=a5 B=02 | DUT: result=94 carry=1 | EXPECTED: result=94 carry=0
+rst=0 sel=0110 A=a5 B=03 | DUT: result=28 carry=0 | EXPECTED: result=28 carry=1
+COUNT sel=0110 6
+===== Corner_Test
+Checked 540 transactions: 502 matches, 38 mismatches
+rst=0 sel=0110 A=01 B=07 | DUT: result=80 carry=1 | EXPECTED: result=80 carry=0
+rst=0 sel=0110 A=7f B=01 | DUT: result=fe carry=1 | EXPECTED: result=fe carry=0
+rst=0 sel=0110 A=80 B=00 | DUT: result=80 carry=1 | EXPECTED: result=80 carry=0
+rst=0 sel=0111 A=00 B=00 | DUT: result=00 carry=x | EXPECTED: result=00 carry=0
+rst=0 sel=0111 A=01 B=00 | DUT: result=01 carry=x | EXPECTED: result=01 carry=0
+rst=0 sel=0111 A=7f B=00 | DUT: result=7f carry=x | EXPECTED: result=7f carry=0
+COUNT sel=0110 21
+COUNT sel=0111 17
+===== Flow_Test
+Checked 617 transactions: 502 matches, 115 mismatches
+rst=0 sel=0110 A=80 B=01 | DUT: result=00 carry=0 | EXPECTED: result=00 carry=1
+rst=0 sel=0110 A=80 B=01 | DUT: result=00 carry=0 | EXPECTED: result=00 carry=1
+rst=0 sel=0110 A=80 B=01 | DUT: result=00 carry=0 | EXPECTED: result=00 carry=1
+rst=0 sel=0111 A=ff B=00 | DUT: result=ff carry=x | EXPECTED: result=ff carry=0
+rst=0 sel=0111 A=ff B=00 | DUT: result=ff carry=x | EXPECTED: result=ff carry=0
+rst=0 sel=0111 A=ff B=00 | DUT: result=ff carry=x | EXPECTED: result=ff carry=0
+rst=0 sel=1000 A=a5 B=3c | DUT: result=db carry=0 | EXPECTED: result=00 carry=0
+rst=0 sel=1000 A=ff B=00 | DUT: result=ff carry=0 | EXPECTED: result=00 carry=0
+rst=0 sel=1000 A=f0 B=0f | DUT: result=ff carry=0 | EXPECTED: result=00 carry=0
+rst=0 sel=1001 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1010 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1011 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1100 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1101 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1110 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1111 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1001 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1010 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1011 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1100 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1101 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1110 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1111 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1001 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1010 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1011 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1100 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1101 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1110 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1111 A=12 B=34 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+COUNT sel=1000 11
+COUNT sel=1010 4
+COUNT sel=1001 5
+COUNT sel=1011 4
+COUNT sel=0110 55
+COUNT sel=1100 4
+COUNT sel=0111 20
+COUNT sel=1110 4
+COUNT sel=1101 4
+COUNT sel=1111 4
+===== Random_Test
+Checked 304 transactions: 286 matches, 18 mismatches
+rst=0 sel=1000 A=39 B=bf | DUT: result=c6 carry=0 | EXPECTED: result=00 carry=0
+rst=0 sel=1000 A=7f B=5f | DUT: result=a0 carry=0 | EXPECTED: result=00 carry=0
+rst=0 sel=1011 A=17 B=88 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1000 A=d4 B=30 | DUT: result=ef carry=0 | EXPECTED: result=00 carry=0
+rst=0 sel=0110 A=b1 B=5a | DUT: result=c4 carry=1 | EXPECTED: result=c4 carry=0
+rst=0 sel=1001 A=c2 B=c3 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=0110 A=2c B=6e | DUT: result=00 carry=0 | EXPECTED: result=00 carry=1
+rst=0 sel=1100 A=d2 B=47 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1010 A=35 B=6d | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=0111 A=fc B=38 | DUT: result=fc carry=x | EXPECTED: result=fc carry=0
+rst=0 sel=0110 A=85 B=6d | DUT: result=a0 carry=1 | EXPECTED: result=a0 carry=0
+rst=0 sel=1111 A=9a B=2f | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1100 A=8d B=dd | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+rst=0 sel=1111 A=e9 B=b5 | DUT: result=00 carry=1 | EXPECTED: result=00 carry=0
+COUNT sel=1000 6
+COUNT sel=1010 1
+COUNT sel=1001 1
+COUNT sel=1011 1
+COUNT sel=0110 4
+COUNT sel=0111 1
+COUNT sel=1100 2
+COUNT sel=1111 2
+===== Pseudo_Random_Test
+Checked 454 transactions: 407 matches, 47 mismatches
+rst=0 sel=0110 A=8d B=84 | DUT: result=d0 carry=1 | EXPECTED: result=d0 carry=0
+rst=0 sel=0111 A=d2 B=70 | DUT: result=d2 carry=x | EXPECTED: result=d2 carry=0
+rst=0 sel=0110 A=08 B=84 | DUT: result=80 carry=1 | EXPECTED: result=80 carry=0
+rst=0 sel=0111 A=e0 B=c8 | DUT: result=e0 carry=x | EXPECTED: result=e0 carry=0
+rst=0 sel=0111 A=9c B=78 | DUT: result=9c carry=x | EXPECTED: result=9c carry=0
+rst=0 sel=0110 A=9b B=88 | DUT: result=9b carry=1 | EXPECTED: result=9b carry=0
+rst=0 sel=1000 A=fd B=56 | DUT: result=ab carry=0 | EXPECTED: result=00 carry=0
+rst=0 sel=1000 A=b1 B=68 | DUT: result=df carry=0 | EXPECTED: result=00 carry=0
+rst=0 sel=1000 A=41 B=6b | DUT: result=be carry=0 | EXPECTED: result=00 carry=0
+COUNT sel=1000 9
+COUNT sel=0110 26
+COUNT sel=0111 12
